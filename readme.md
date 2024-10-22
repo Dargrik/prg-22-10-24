@@ -53,10 +53,12 @@ auto1.VypisInformace(); // Výstup: Škoda Octavia (2015)
 Getter je metoda, která umožňuje získat hodnotu nějaké vlastnosti. **Setter** je metoda, která umožňuje nastavit hodnotu nějaké vlastnosti. V C# se používá zkrácená syntaxe pro gettery a settery - automatické vlastnosti.
 
 Příklad getteru a setteru - automatické vlastnosti:
-````csharp
+```csharp
 public string Znacka { get; set; }
 ```
+
 Příklad getteru a setteru s validací:
+
 ```csharp
 private int rokVyroby;
 public int RokVyroby
@@ -80,6 +82,7 @@ Tři základní principy OOP
 Zapouzdření znamená, že objekt skryje svou vnitřní implementaci a poskytuje přístup k datům pouze prostřednictvím veřejných metod.
 
 Příklad v C#:
+
 ```csharp
 public class BankovniUcet
 {
@@ -113,6 +116,7 @@ public class BankovniUcet
 Dědičnost umožňuje vytvářet nové třídy, které dědí vlastnosti a metody z jiné třídy.
 
 Příklad v C#:
+
 ```csharp
 public class DopravniProstredek
 {
@@ -140,6 +144,7 @@ public class Auto : DopravniProstredek
 Polymorfismus znamená, že můžeme použít objekty různých tříd prostřednictvím stejného rozhraní nebo metody.
 
 Příklad v C#:
+
 ```csharp
 public class Zvire
 {
@@ -174,7 +179,6 @@ mojeZvire.VydatZvuk();  // Výstup: Pes štěká.
 mojeZvire = new Kocka();
 mojeZvire.VydatZvuk();  // Výstup: Kočka mňouká.
 ```
-
 
 ---
 

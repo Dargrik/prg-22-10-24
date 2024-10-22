@@ -34,7 +34,7 @@ public class Auto
     {
         Console.WriteLine($"{Znacka} {Model} ({RokVyroby})");
     }
-}
+}```
 
 V uvedeném kódu vidíme jednoduchou **třídu** Auto, která reprezentuje nějaké auto. Třída obsahuje tři **atributy** (vlastnosti): Znacka, Model a RokVyroby. Tyto vlastnosti jsou veřejné, což znamená, že jsou dostupné odkudkoliv v programu, a jsou definovány pomocí tzv. **getterů** a **setterů**.
 
@@ -52,6 +52,7 @@ auto1.VypisInformace(); // Výstup: Škoda Octavia (2015)
 Getter je metoda, která umožňuje získat hodnotu nějaké vlastnosti. **Setter** je metoda, která umožňuje nastavit hodnotu nějaké vlastnosti. V C# se používá zkrácená syntaxe pro gettery a settery - automatické vlastnosti.
 
 Příklad getteru a setteru s validací:
+```csharp
 private int rokVyroby;
 public int RokVyroby
 {
@@ -64,7 +65,7 @@ public int RokVyroby
         }
         rokVyroby = value;
     }
-}
+}```
 
 Tři základní principy OOP
 
@@ -73,6 +74,7 @@ Tři základní principy OOP
 Zapouzdření znamená, že objekt skryje svou vnitřní implementaci a poskytuje přístup k datům pouze prostřednictvím veřejných metod.
 
 Příklad v C#:
+```csharp
 public class BankovniUcet
 {
     private decimal zustatek;
@@ -97,13 +99,14 @@ public class BankovniUcet
             zustatek -= castka;
         }
     }
-}
+}```
 
 2. **Dědičnost** (Inheritance)
 
 Dědičnost umožňuje vytvářet nové třídy, které dědí vlastnosti a metody z jiné třídy.
 
 Příklad v C#:
+```csharp
 public class DopravniProstredek
 {
     public int MaximalniRychlost { get; set; }
@@ -122,13 +125,14 @@ public class Auto : DopravniProstredek
     {
         Console.WriteLine("Auto troubí!");
     }
-}
+}```
 
 3. **Polymorfismus**
 
 Polymorfismus znamená, že můžeme použít objekty různých tříd prostřednictvím stejného rozhraní nebo metody.
 
 Příklad v C#:
+```csharp
 public class Zvire
 {
     public virtual void VydatZvuk()
@@ -151,11 +155,12 @@ public class Kocka : Zvire
     {
         Console.WriteLine("Kočka mňouká.");
     }
-}
+}```
 
 Polymorfismus v akci:
+```csharp
 Zvire mojeZvire = new Pes();
 mojeZvire.VydatZvuk();  // Výstup: Pes štěká.
 
 mojeZvire = new Kocka();
-mojeZvire.VydatZvuk();  // Výstup: Kočka mňouká.
+mojeZvire.VydatZvuk();  // Výstup: Kočka mňouká.```

@@ -170,3 +170,27 @@ mojeZvire.VydatZvuk();  // Výstup: Pes štěká.
 mojeZvire = new Kocka();
 mojeZvire.VydatZvuk();  // Výstup: Kočka mňouká.
 ```
+
+
+---
+```json
+{
+  "auta": [
+    {
+      "Znacka": "Škoda",
+      "Model": "Octavia",
+      "RokVyroby": 2015
+    },
+    {
+      "Znacka": "Toyota",
+      "Model": "Corolla",
+      "RokVyroby": 2018
+    },
+    {
+      "Znacka": "Honda",
+      "Model": "Civic",
+      "RokVyroby": 2020
+    }
+  ]
+}
+```

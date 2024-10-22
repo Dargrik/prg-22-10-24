@@ -34,7 +34,8 @@ public class Auto
     {
         Console.WriteLine($"{Znacka} {Model} ({RokVyroby})");
     }
-}```
+}
+```
 
 V uvedeném kódu vidíme jednoduchou **třídu** Auto, která reprezentuje nějaké auto. Třída obsahuje tři **atributy** (vlastnosti): Znacka, Model a RokVyroby. Tyto vlastnosti jsou veřejné, což znamená, že jsou dostupné odkudkoliv v programu, a jsou definovány pomocí tzv. **getterů** a **setterů**.
 

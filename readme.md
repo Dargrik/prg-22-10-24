@@ -52,6 +52,10 @@ auto1.VypisInformace(); // Výstup: Škoda Octavia (2015)
 
 Getter je metoda, která umožňuje získat hodnotu nějaké vlastnosti. **Setter** je metoda, která umožňuje nastavit hodnotu nějaké vlastnosti. V C# se používá zkrácená syntaxe pro gettery a settery - automatické vlastnosti.
 
+Příklad getteru a setteru - automatické vlastnosti:
+````csharp
+public string Znacka { get; set; }
+```
 Příklad getteru a setteru s validací:
 ```csharp
 private int rokVyroby;

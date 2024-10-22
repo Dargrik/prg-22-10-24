@@ -173,6 +173,17 @@ mojeZvire.VydatZvuk();  // Výstup: Kočka mňouká.
 
 
 ---
+
+```csharp
+Auto auto1 = new Auto("Škoda", "Octavia", 2015);
+Auto auto2 = new Auto("Toyota", "Corolla", 2018);
+Auto auto3 = new Auto("Honda", "Civic", 2020);
+
+auto1.VypisInformace(); // Výstup: Škoda Octavia (2015)
+auto2.VypisInformace(); // Výstup: Toyota Corolla (2018)
+auto3.VypisInformace(); // Výstup: Honda Civic (2020)
+```
+
 ```json
 {
   "auta": [

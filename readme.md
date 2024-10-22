@@ -66,7 +66,8 @@ public int RokVyroby
         }
         rokVyroby = value;
     }
-}```
+}
+```
 
 Tři základní principy OOP
 
@@ -100,7 +101,8 @@ public class BankovniUcet
             zustatek -= castka;
         }
     }
-}```
+}
+```
 
 2. **Dědičnost** (Inheritance)
 
@@ -126,7 +128,8 @@ public class Auto : DopravniProstredek
     {
         Console.WriteLine("Auto troubí!");
     }
-}```
+}
+```
 
 3. **Polymorfismus**
 
@@ -156,7 +159,8 @@ public class Kocka : Zvire
     {
         Console.WriteLine("Kočka mňouká.");
     }
-}```
+}
+```
 
 Polymorfismus v akci:
 ```csharp
@@ -164,4 +168,5 @@ Zvire mojeZvire = new Pes();
 mojeZvire.VydatZvuk();  // Výstup: Pes štěká.
 
 mojeZvire = new Kocka();
-mojeZvire.VydatZvuk();  // Výstup: Kočka mňouká.```
+mojeZvire.VydatZvuk();  // Výstup: Kočka mňouká.
+```
